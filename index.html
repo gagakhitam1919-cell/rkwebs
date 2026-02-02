@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RKNET - WiFi Murah Warga Sumringah</title>
+    <title>PT PHATRIA INTI PERSADA - WiFi Murah Warga Sumringah</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; background-color: #f8fafc; margin: 0; padding-bottom: 40px; } /* padding agar tidak tertutup teks berjalan */
@@ -38,16 +39,34 @@
         .voucher-price { font-size: 28px; font-weight: 900; font-style: italic; color: #1e293b; line-height: 1; }
 
         /* Style Fitur Tambahan */
-        .wa-floating { position: fixed; bottom: 60px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; items-center; justify-content: center; font-size: 32px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 9999; animation: pulse 2s infinite; }
+        /* Perbaikan No 3: Floating WA diperbaiki tampilannya */
+        .wa-floating { position: fixed; bottom: 65px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 9999; animation: pulse 2s infinite; text-decoration: none; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-        .promo-running { position: fixed; bottom: 0; left: 0; width: 100%; background: #ff0000; color: white; py-2; z-index: 10000; font-weight: 800; font-style: italic; font-size: 12px; text-transform: uppercase; }
-        .feature-box { background: white; padding: 20px; border-radius: 1.5rem; border: 1px solid #e2e8f0; text-align: center; }
+        .promo-running { position: fixed; bottom: 0; left: 0; width: 100%; background: #ff0000; color: white; py-2; z-index: 10000; font-weight: 800; font-style: italic; font-size: 12px; text-transform: uppercase; padding: 6px 0; }
+        
+        /* Perbaikan No 5: Merapikan bungkus Menu Fitur */
+        .feature-box { background: white; padding: 25px 15px; border-radius: 2rem; border: 1px solid #e2e8f0; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+        .feature-box:hover { transform: translateY(-5px); border-color: #3b82f6; }
+
+        /* Style No 4: Logo Chrome Metallic Biru */
+        .logo-chrome {
+            font-family: 'Exo 2', sans-serif;
+            font-style: italic; font-weight: 900;
+            background: linear-gradient(180deg, #001d3d 0%, #0061ff 45%, #ffffff 50%, #94a3b8 55%, #001d3d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+            font-size: 3.5rem;
+            line-height: 1;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 
     <a href="https://wa.me/628816896891" class="wa-floating" target="_blank">
-        <i class="fab fa-whatsapp" style="margin-top: 13px; margin-left: 14px;"></i>
+        <i class="fab fa-whatsapp"></i>
     </a>
 
     <div class="promo-running">
@@ -56,9 +75,8 @@
 
     <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-3">
         <div class="safe-container flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="bg-blue-600 p-1.5 rounded-lg text-white"><i class="fas fa-bolt-lightning text-sm"></i></div>
-                <h1 class="font-black text-lg tracking-tighter uppercase italic">RKNET <span class="text-blue-600">OFFICIAL</span></h1>
+            <div class="flex items-center">
+                <h1 class="font-bold text-slate-800 tracking-tight text-sm md:text-lg">🌐 <span class="text-blue-600 font-black">PT RKNET SUKSES BERKAH</span></h1>
             </div>
             <a href="https://bit.ly/RKNET_REGISTER" class="conf-link-daftar bg-blue-600 text-white px-5 py-2 rounded-full font-bold text-[10px] uppercase">DAFTAR</a>
         </div>
@@ -66,6 +84,7 @@
 
     <header class="hero-bg pt-28 pb-20 text-white text-center">
         <div class="safe-container" data-aos="fade-left">
+            <div class="logo-chrome">RKNET</div>
             <h2 class="text-4xl md:text-7xl font-black mb-2 tracking-tighter uppercase italic">WIFI MURAH</h2>
             <h3 class="text-2xl md:text-4xl font-extrabold mb-8 text-blue-400 italic">WARGA KARAWANG SUMRINGAH</h3>
             <p class="text-slate-300 text-sm italic px-4 max-w-2xl mx-auto font-bold uppercase tracking-wide mb-6">"Internet cepat harga merakyat pelayanan secepat kilat tidak lambat serasa tetangga dekat"</p>
@@ -76,28 +95,28 @@
         </div>
     </header>
 
-    <section class="py-10 bg-white">
+    <section class="py-12 bg-white">
         <div class="safe-container">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div class="feature-box" data-aos="zoom-in">
-                    <div class="text-2xl mb-2">⭐</div>
-                    <h5 class="font-black italic text-xs uppercase text-slate-900">Rating Warga</h5>
-                    <p class="text-[9px] font-bold text-slate-500 uppercase">Tanya Tetangga Anda, Kepuasan Kami Dari Mulut Ke Mulut</p>
+                    <div class="text-3xl mb-3">⭐</div>
+                    <h5 class="font-black italic text-[11px] uppercase text-slate-900 mb-1">Rating Warga</h5>
+                    <p class="text-[9px] font-bold text-slate-500 uppercase leading-tight">Kepuasan Terjamin Dari Mulut Ke Mulut</p>
                 </div>
                 <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="text-2xl mb-2">🔥</div>
-                    <h5 class="font-black italic text-xs uppercase text-slate-900">4 Gbps Backbone</h5>
-                    <p class="text-[9px] font-bold text-slate-500 uppercase">Infrastructure Pipa Beton Bukan Ember !!!</p>
+                    <div class="text-3xl mb-3">🔥</div>
+                    <h5 class="font-black italic text-[11px] uppercase text-slate-900 mb-1">4 Gbps Backbone</h5>
+                    <p class="text-[9px] font-bold text-slate-500 uppercase leading-tight">Infrastruktur Pipa Beton Bukan Ember !!!</p>
                 </div>
                 <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="text-2xl mb-2">⚡</div>
-                    <h5 class="font-black italic text-xs uppercase text-slate-900">Full Fiber Optic</h5>
-                    <p class="text-[9px] font-bold text-slate-500 uppercase">Stabil Saat Main Game, Smooth Browsing & Streaming</p>
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h5 class="font-black italic text-[11px] uppercase text-slate-900 mb-1">Full Fiber Optic</h5>
+                    <p class="text-[9px] font-bold text-slate-500 uppercase leading-tight">Stabil Main Game, Smooth Streaming</p>
                 </div>
                 <div class="feature-box" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="text-green-500 text-xl font-black mb-2">✅ 95%+</div>
-                    <h5 class="font-black italic text-xs uppercase text-slate-900">Uptime Target</h5>
-                    <p class="text-[9px] font-bold text-slate-500 uppercase">Responsif Dengan Redundancy Link Backup</p>
+                    <div class="text-green-500 text-2xl font-black mb-3">95%+</div>
+                    <h5 class="font-black italic text-[11px] uppercase text-slate-900 mb-1">Uptime Target</h5>
+                    <p class="text-[9px] font-bold text-slate-500 uppercase leading-tight">Responsif Dengan Redundancy Link</p>
                 </div>
             </div>
         </div>
@@ -379,7 +398,7 @@
     </section>
 
     <footer class="py-10 bg-slate-900 text-center text-slate-600 text-[8px] font-black uppercase italic tracking-[0.5em] border-t border-white/5">
-        PT RKNET SUKSES BERKAH © 2026
+        PT PHATRIA INTI PERSADA © 2026
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
