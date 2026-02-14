@@ -38,17 +38,13 @@
         .voucher-card:hover { transform: translateY(-5px); border-color: #3b82f6; }
         .voucher-price { font-size: 28px; font-weight: 900; font-style: italic; color: #1e293b; line-height: 1; }
 
-        /* Style Fitur Tambahan */
-        /* Perbaikan No 3: Floating WA diperbaiki tampilannya */
         .wa-floating { position: fixed; bottom: 65px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 9999; animation: pulse 2s infinite; text-decoration: none; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
         .promo-running { position: fixed; bottom: 0; left: 0; width: 100%; background: #ff0000; color: white; py-2; z-index: 10000; font-weight: 800; font-style: italic; font-size: 12px; text-transform: uppercase; padding: 6px 0; }
         
-        /* Perbaikan No 5: Merapikan bungkus Menu Fitur */
         .feature-box { background: white; padding: 25px 15px; border-radius: 2rem; border: 1px solid #e2e8f0; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
         .feature-box:hover { transform: translateY(-5px); border-color: #3b82f6; }
 
-        /* Style No 4: Logo Chrome Metallic Biru */
         .logo-chrome {
             font-family: 'Exo 2', sans-serif;
             font-style: italic; font-weight: 900;
@@ -61,6 +57,10 @@
             display: inline-block;
             margin-bottom: 10px;
         }
+
+        /* STYLE KHUSUS PROMO REFERRAL BARU */
+        .referral-card { background: #0f172a; border-radius: 3rem; position: relative; overflow: hidden; border: 4px solid #1e40af; }
+        .referral-glow { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%); pointer-events: none; }
     </style>
 </head>
 <body>
@@ -123,50 +123,6 @@
         </div>
     </section>
 
-    <section class="py-20 bg-white overflow-hidden">
-        <div class="safe-container">
-            <div class="max-w-3xl mx-auto mb-16" data-aos="fade-right">
-                <h4 class="text-blue-600 font-black text-xs uppercase tracking-widest mb-4 italic text-center">CERITA SINGKAT</h4>
-                <h3 class="text-2xl md:text-4xl font-black text-slate-900 leading-tight uppercase italic mb-6 text-center">Kenapa Kami Memulai RKNET?</h3>
-                <div class="space-y-4 text-sm text-slate-600 leading-relaxed font-bold italic border-l-4 border-blue-600 pl-6 mb-12 uppercase">
-                    <p>Bermula dari keresahan warga akan internet mahal dengan pelayanan yang kaku dan lambat. Kami menyadari bahwa akses informasi adalah hak setiap warga Karawang, bukan hanya mereka yang mampu membayar premium.</p>
-                    <p>RKNET adalah produk dari semangat gotong royong warga Karawang. Kami percaya internet stabil, teknisi responsif, dan harga yang fair adalah milik semua warga. Kami membuktikannya bersama Anda.</p>
-                </div>
-                <div class="bg-blue-50 p-8 rounded-[3rem] border border-blue-100 text-center shadow-inner" data-aos="zoom-in">
-                    <h4 class="text-lg font-black uppercase italic mb-3 text-blue-900">MENGAPA PENDEKATAN LOKAL KAMI LEBIH BAIK?</h4>
-                    <p class="text-[12px] md:text-sm text-blue-800 font-bold italic leading-relaxed uppercase">
-                        "Kami bukan perusahaan besar yang kaku. Kami adalah tetangga Anda. Pendekatan kami berbeda karena kami tahu persis kondisi lapangan di Karawang. Hasilnya? Layanan yang lebih cepat, lebih personal, dan lebih mengerti kebutuhan warga."
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
-                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-right">
-                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-handshake"></i></div>
-                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">🤝 Beri Kami Kesempatan Untuk Berkembang</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Mulai dari Anda memilih kami, kami berkomitmen terus berinovasi untuk warga.</p></div>
-                </div>
-                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-left">
-                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-users"></i></div>
-                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">🤝 Layanan Tetangga</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Bukan sekadar nomor pelanggan, kami mengenal warga kami secara pribadi.</p></div>
-                </div>
-                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-right">
-                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-gears"></i></div>
-                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">⚙️ Kami Terus Berinovasi</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Fitur blokir device hingga monitoring real-time sesuai kebutuhan warga.</p></div>
-                </div>
-                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-left">
-                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-bolt-lightning"></i></div>
-                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">⚡ Respon Super Cepat</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Teknisi lokal siaga 24 jam. Response time kurang dari 1 jam. Dekat & Cepat.</p></div>
-                </div>
-                <div class="bg-blue-900 p-8 rounded-[2.5rem] text-white md:col-span-2 shadow-2xl border-4 border-blue-400" data-aos="zoom-in">
-                    <div class="flex gap-5 items-start">
-                        <div class="bg-white text-blue-900 p-4 rounded-2xl shrink-0 shadow-lg"><i class="fas fa-shield-halved"></i></div>
-                        <div><h5 class="font-black uppercase italic text-sm mb-2">🔒 Terpercaya & Aman</h5><p class="text-[10px] font-bold uppercase italic opacity-90 leading-relaxed">Mitra ISP resmi PT PHATRIA INTI PERSADA. Infrastructure Fiber 100% dengan redundant backup — putus satu masih jalan! Aman, stabil, dengan infrastruktur terpercaya.</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="py-16 bg-slate-50 overflow-hidden">
         <div class="safe-container">
             <div class="text-center mb-12">
@@ -222,6 +178,91 @@
                         <li class="flex gap-2"><i class="fas fa-rocket text-blue-600"></i> Akses Super Cepat</li>
                     </ul>
                     <a href="#" class="conf-link-daftar btn-pasang bg-blue-600 text-white">PILIH PAKET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="safe-container">
+            <div class="referral-card p-10 md:p-16 shadow-2xl" data-aos="zoom-in">
+                <div class="referral-glow"></div>
+                <div class="relative z-10">
+                    <div class="text-center mb-12">
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full font-black text-[10px] uppercase tracking-widest italic shadow-lg mb-4 inline-block">PENDEKAR REFERRAL PROGRAM</span>
+                        <h2 class="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter uppercase italic leading-none">AJAK TETANGGA <br><span class="text-blue-400">CUAN 50 RIBU!</span></h2>
+                        <p class="text-slate-400 text-xs md:text-sm font-bold uppercase italic tracking-wide max-w-xl mx-auto leading-relaxed">"Jangan Cuma Internetan Sendirian. Setiap 1 Orang Yang Anda Ajak, Tagihan Anda Bulan Depan Kami Potong 50 Ribu Rupiah!"</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6 mb-12">
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-sm group hover:border-blue-500 transition-all">
+                            <div class="text-blue-400 text-2xl mb-4"><i class="fas fa-comment-dots"></i></div>
+                            <h5 class="text-white font-black italic text-xs uppercase mb-2">1. Spill Kecepatan</h5>
+                            <p class="text-slate-500 text-[10px] font-bold uppercase leading-tight italic">Pamerkan kencangnya RKNET ke tetangga Anda. Biarkan mereka tergiur kenyamanan streaming tanpa buffering.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-sm group hover:border-blue-500 transition-all">
+                            <div class="text-blue-400 text-2xl mb-4"><i class="fas fa-user-plus"></i></div>
+                            <h5 class="text-white font-black italic text-xs uppercase mb-2">2. Daftar Jalur Anda</h5>
+                            <p class="text-slate-500 text-[10px] font-bold uppercase leading-tight italic">Minta tetangga sebutkan Nama Anda saat mendaftar ke Admin. Admin akan mencatat Anda sebagai Pendekar Referral.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-3xl backdrop-blur-sm group hover:border-blue-400 transition-all">
+                            <div class="text-green-400 text-2xl mb-4"><i class="fas fa-money-bill-wave"></i></div>
+                            <h5 class="text-white font-black italic text-xs uppercase mb-2">3. Cairkan Bonus</h5>
+                            <p class="text-slate-500 text-[10px] font-bold uppercase leading-tight italic">Begitu tetangga aktif & bayar bulan ke-1, tagihan Anda otomatis dipotong 50rb. Ajak 3 orang? Gratis iuran sebulan!</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-600/20 border border-blue-400/30 p-6 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div class="text-center md:text-left">
+                            <p class="text-white font-black italic text-sm uppercase">SIAP JADI PENDEKAR REFERRAL?</p>
+                            <p class="text-blue-400 text-[10px] font-bold uppercase italic">Bonus berlaku kelipatan & tanpa batas maksimal!</p>
+                        </div>
+                        <a href="https://wa.me/628816896891" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-black text-xs uppercase italic shadow-lg hover:bg-blue-500 transition-all transform hover:scale-105">HUBUNGI ADMIN KLAIM BONUS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="safe-container">
+            <div class="max-w-3xl mx-auto mb-16" data-aos="fade-right">
+                <h4 class="text-blue-600 font-black text-xs uppercase tracking-widest mb-4 italic text-center">CERITA SINGKAT</h4>
+                <h3 class="text-2xl md:text-4xl font-black text-slate-900 leading-tight uppercase italic mb-6 text-center">Kenapa Kami Memulai RKNET?</h3>
+                <div class="space-y-4 text-sm text-slate-600 leading-relaxed font-bold italic border-l-4 border-blue-600 pl-6 mb-12 uppercase">
+                    <p>Bermula dari keresahan warga akan internet mahal dengan pelayanan yang kaku dan lambat. Kami menyadari bahwa akses informasi adalah hak setiap warga Karawang, bukan hanya mereka yang mampu membayar premium.</p>
+                    <p>RKNET adalah produk dari semangat gotong royong warga Karawang. Kami percaya internet stabil, teknisi responsif, dan harga yang fair adalah milik semua warga. Kami membuktikannya bersama Anda.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-[3rem] border border-blue-100 text-center shadow-inner" data-aos="zoom-in">
+                    <h4 class="text-lg font-black uppercase italic mb-3 text-blue-900">MENGAPA PENDEKATAN LOKAL KAMI LEBIH BAIK?</h4>
+                    <p class="text-[12px] md:text-sm text-blue-800 font-bold italic leading-relaxed uppercase">
+                        "Kami bukan perusahaan besar yang kaku. Kami adalah tetangga Anda. Pendekatan kami berbeda karena kami tahu persis kondisi lapangan di Karawang. Hasilnya? Layanan yang lebih cepat, lebih personal, dan lebih mengerti kebutuhan warga."
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-right">
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-handshake"></i></div>
+                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">🤝 Beri Kami Kesempatan Untuk Berkembang</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Mulai dari Anda memilih kami, kami berkomitmen terus berinovasi untuk warga.</p></div>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-left">
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-users"></i></div>
+                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">🤝 Layanan Tetangga</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Bukan sekadar nomor pelanggan, kami mengenal warga kami secara pribadi.</p></div>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-right">
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-gears"></i></div>
+                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">⚙️ Kami Terus Berinovasi</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Fitur blokir device hingga monitoring real-time sesuai kebutuhan warga.</p></div>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 flex gap-5 items-start" data-aos="fade-left">
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl shrink-0 shadow-lg shadow-blue-200"><i class="fas fa-bolt-lightning"></i></div>
+                    <div><h5 class="font-black uppercase italic text-sm mb-2 text-slate-900">⚡ Respon Super Cepat</h5><p class="text-[10px] font-bold uppercase opacity-60 italic">Teknisi lokal siaga 24 jam. Response time kurang dari 1 jam. Dekat & Cepat.</p></div>
+                </div>
+                <div class="bg-blue-900 p-8 rounded-[2.5rem] text-white md:col-span-2 shadow-2xl border-4 border-blue-400" data-aos="zoom-in">
+                    <div class="flex gap-5 items-start">
+                        <div class="bg-white text-blue-900 p-4 rounded-2xl shrink-0 shadow-lg"><i class="fas fa-shield-halved"></i></div>
+                        <div><h5 class="font-black uppercase italic text-sm mb-2">🔒 Terpercaya & Aman</h5><p class="text-[10px] font-bold uppercase italic opacity-90 leading-relaxed">Mitra ISP resmi PT PHATRIA INTI PERSADA. Infrastructure Fiber 100% dengan redundant backup — putus satu masih jalan! Aman, stabil, dengan infrastruktur terpercaya.</p></div>
+                    </div>
                 </div>
             </div>
         </div>
